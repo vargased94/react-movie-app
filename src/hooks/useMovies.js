@@ -1,8 +1,9 @@
 import responseMovies from "../mocks/movies.json";
 
 export function useMovies() {
-  const movies = responseMovies.Search;
+  // const [responseMovies, setResponseMovies] = useState([]);
 
+  const movies = responseMovies.Search;
   /*
     Esto se hace para no cambiar la estructura
     de los datos en todos los componentes
@@ -14,6 +15,10 @@ export function useMovies() {
     year: movie.Year,
     poster: movie.Poster,
   }));
+
+  // const getMovie = () => {
+
+  // }
 
   return { movies: mappedMovies };
 }
